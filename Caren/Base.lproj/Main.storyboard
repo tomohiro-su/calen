@@ -30,11 +30,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BF2-rS-q32">
+                                <rect key="frame" x="82" y="822" width="250" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="TAP/MIC" image="memories" catalog="system"/>
+                                <connections>
+                                    <action selector="tapBotton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAI-Mh-kW6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="tapBottom" destination="BF2-rS-q32" id="EMn-jP-Gm7"/>
                         <segue destination="6lP-l4-r6q" kind="show" id="bsn-5y-MDQ"/>
                         <segue destination="2Jk-x1-upx" kind="show" id="6Xx-OK-5Tt"/>
                     </connections>
@@ -43,36 +54,42 @@
             </objects>
             <point key="canvasLocation" x="57.971014492753625" y="143.97321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--One View Controller-->
         <scene sceneID="lnh-hb-b2W">
             <objects>
-                <viewController id="2Jk-x1-upx" sceneMemberID="viewController">
+                <viewController id="2Jk-x1-upx" customClass="OneViewController" customModule="Caren" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s9n-hV-si7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="タップすると時刻を記録、仕事内容の時間分けに使用、初めのタイプと初め終わり" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UIV-qc-v00">
-                                <rect key="frame" x="76" y="111" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkK-7I-B9e">
+                                <rect key="frame" x="82" y="777" width="250" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="TAP/MIC" image="memories" catalog="system"/>
+                                <connections>
+                                    <action selector="memBotton:" destination="2Jk-x1-upx" eventType="touchUpInside" id="j3l-Mg-7oh"/>
+                                    <segue destination="6lP-l4-r6q" kind="show" id="e2K-Q2-xNv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="twU-p7-uJX"/>
                     </view>
                     <navigationItem key="navigationItem" id="ift-UL-Mlz"/>
+                    <connections>
+                        <outlet property="memBotton" destination="pkK-7I-B9e" id="8Kf-B7-YB1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kih-tU-EuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="58" y="805"/>
         </scene>
-        <!--View Controller-->
+        <!--Day View Controller-->
         <scene sceneID="Ify-bX-grS">
             <objects>
-                <viewController id="6lP-l4-r6q" sceneMemberID="viewController">
+                <viewController id="6lP-l4-r6q" customClass="dayViewController" customModule="Caren" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2pn-c4-OWK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +110,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUi-sF-opa">
+                                <rect key="frame" x="82" y="761" width="250" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="TAP/MIC" image="memories" catalog="system"/>
+                                <connections>
+                                    <action selector="memBotton:" destination="2Jk-x1-upx" eventType="touchUpInside" id="pVL-8A-Z26"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DCC-hy-HCp"/>
@@ -106,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="1018.840579710145" y="143.97321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Data View Controller-->
         <scene sceneID="GHM-kG-2sc">
             <objects>
-                <viewController id="FnQ-YM-aH8" sceneMemberID="viewController">
+                <viewController id="FnQ-YM-aH8" customClass="dataViewController" customModule="Caren" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BBn-ru-E9b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,6 +147,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cGt-iM-8Rv">
+                                <rect key="frame" x="0.0" y="-31" width="414" height="873"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RJk-hH-5hO">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RJk-hH-5hO" id="8qj-Ke-s1e">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mi2-8J-vvz"/>
@@ -128,12 +170,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iH-NS-VpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2051" y="144"/>
+            <point key="canvasLocation" x="2050.7246376811595" y="143.97321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="Eor-0p-S3V">
             <objects>
-                <viewController id="FxD-cA-9kZ" sceneMemberID="viewController">
+                <viewController id="FxD-cA-9kZ" customClass="playViewController" customModule="Caren" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ohU-LT-Mci">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +199,10 @@
             <point key="canvasLocation" x="1019" y="-540"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="memories" catalog="system" width="64" height="52"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bsn-5y-MDQ"/>
+        <segue reference="7F4-ti-8VT"/>
     </inferredMetricsTieBreakers>
 </document>

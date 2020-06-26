@@ -3,20 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0B612224A56A150005AF60 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612124A56A150005AF60 /* OneViewController.swift */; };
+		2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612324A578A00005AF60 /* dayViewController.swift */; };
+		2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612524A57ED30005AF60 /* dataViewController.swift */; };
+		2C0B612824A57F760005AF60 /* playViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612724A57F760005AF60 /* playViewController.swift */; };
 		2C6A5989249D83FE00B206C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A5988249D83FE00B206C7 /* AppDelegate.swift */; };
 		2C6A598B249D83FE00B206C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A598A249D83FE00B206C7 /* SceneDelegate.swift */; };
 		2C6A598D249D83FE00B206C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A598C249D83FE00B206C7 /* ViewController.swift */; };
 		2C6A5990249D83FE00B206C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A598E249D83FE00B206C7 /* Main.storyboard */; };
 		2C6A5992249D83FF00B206C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5991249D83FF00B206C7 /* Assets.xcassets */; };
 		2C6A5995249D83FF00B206C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5993249D83FF00B206C7 /* LaunchScreen.storyboard */; };
+		2C74104424A55ABB000CA5A8 /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74104324A55ABB000CA5A8 /* task.swift */; };
 		C3CF912AB09436116B99F62A /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4766B576094E003D59F1E8 /* Pods_Caren.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0B612124A56A150005AF60 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		2C0B612324A578A00005AF60 /* dayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayViewController.swift; sourceTree = "<group>"; };
+		2C0B612524A57ED30005AF60 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
+		2C0B612724A57F760005AF60 /* playViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playViewController.swift; sourceTree = "<group>"; };
 		2C6A5985249D83FE00B206C7 /* Caren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6A5988249D83FE00B206C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6A598A249D83FE00B206C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +34,7 @@
 		2C6A5991249D83FF00B206C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6A5994249D83FF00B206C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6A5996249D83FF00B206C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C74104324A55ABB000CA5A8 /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
 		5B4766B576094E003D59F1E8 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA62E991450307D0F68631A /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
 		9346BCFE4E4451F05D02BFD9 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,11 +75,16 @@
 			children = (
 				2C6A5988249D83FE00B206C7 /* AppDelegate.swift */,
 				2C6A598A249D83FE00B206C7 /* SceneDelegate.swift */,
+				2C74104324A55ABB000CA5A8 /* task.swift */,
 				2C6A598C249D83FE00B206C7 /* ViewController.swift */,
+				2C0B612724A57F760005AF60 /* playViewController.swift */,
+				2C0B612324A578A00005AF60 /* dayViewController.swift */,
+				2C0B612124A56A150005AF60 /* OneViewController.swift */,
 				2C6A598E249D83FE00B206C7 /* Main.storyboard */,
 				2C6A5991249D83FF00B206C7 /* Assets.xcassets */,
 				2C6A5993249D83FF00B206C7 /* LaunchScreen.storyboard */,
 				2C6A5996249D83FF00B206C7 /* Info.plist */,
+				2C0B612524A57ED30005AF60 /* dataViewController.swift */,
 			);
 			path = Caren;
 			sourceTree = "<group>";
@@ -88,7 +103,6 @@
 				9346BCFE4E4451F05D02BFD9 /* Pods-Caren.debug.xcconfig */,
 				5DA62E991450307D0F68631A /* Pods-Caren.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0B612824A57F760005AF60 /* playViewController.swift in Sources */,
+				2C74104424A55ABB000CA5A8 /* task.swift in Sources */,
+				2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */,
+				2C0B612224A56A150005AF60 /* OneViewController.swift in Sources */,
+				2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */,
 				2C6A598D249D83FE00B206C7 /* ViewController.swift in Sources */,
 				2C6A5989249D83FE00B206C7 /* AppDelegate.swift in Sources */,
 				2C6A598B249D83FE00B206C7 /* SceneDelegate.swift in Sources */,
