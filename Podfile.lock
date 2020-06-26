@@ -1,5 +1,23 @@
 PODS:
   - CalculateCalendarLogic (0.3.0)
+  - CLImageEditor/AllTools (0.2.4):
+    - CLImageEditor/Core
+    - CLImageEditor/EmoticonTool
+    - CLImageEditor/ResizeTool
+    - CLImageEditor/SplashTool
+    - CLImageEditor/StickerTool
+    - CLImageEditor/TextTool
+  - CLImageEditor/Core (0.2.4)
+  - CLImageEditor/EmoticonTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/ResizeTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/SplashTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/StickerTool (0.2.4):
+    - CLImageEditor/Core
+  - CLImageEditor/TextTool (0.2.4):
+    - CLImageEditor/Core
   - FSCalendar (2.8.1)
   - Realm (3.20.0):
     - Realm/Headers (= 3.20.0)
@@ -9,22 +27,25 @@ PODS:
 
 DEPENDENCIES:
   - CalculateCalendarLogic
+  - CLImageEditor/AllTools (= 0.2.4)
   - FSCalendar
   - RealmSwift (= 3.20.0)
 
 SPEC REPOS:
   trunk:
     - CalculateCalendarLogic
+    - CLImageEditor
     - FSCalendar
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
   CalculateCalendarLogic: cd5b2c706a8628bb924c5ee9d05c4f61bdbaf390
+  CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
   RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
 
-PODFILE CHECKSUM: bfc41dacd862970ca52525ab4052370530dd22b2
+PODFILE CHECKSUM: 31685e898b173d3695a2b9d94bfaf2c9665aee4f
 
 COCOAPODS: 1.9.3

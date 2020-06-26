@@ -12,6 +12,6 @@ target 'Caren' do
   pod 'RealmSwift', '3.20.0'
 
   # Pods for Caren
-
+pod 'CLImageEditor/AllTools','0.2.4'
 
 end

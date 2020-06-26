@@ -3,4 +3,130 @@
    uuid = "7E7F1A97-BC11-4975-AC01-AFE13030B829"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C7191B4-F098-4DCD-8146-D9D513EC138B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caren/OneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "OneViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9C7191B4-F098-4DCD-8146-D9D513EC138B - e6e0d4cc4cdc889"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caren.OneViewController.taskArray.getter : RealmSwift.Results&lt;Caren.Task&gt;"
+                  moduleName = "Caren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/egran2911/Desktop/Caren/Caren/OneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "9C7191B4-F098-4DCD-8146-D9D513EC138B - ccfc3121414ba8bd"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caren.OneViewController.taskArray.setter : RealmSwift.Results&lt;Caren.Task&gt;"
+                  moduleName = "Caren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/egran2911/Desktop/Caren/Caren/OneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "9C7191B4-F098-4DCD-8146-D9D513EC138B - e0f35849af66608c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caren.OneViewController.taskArray.modify : RealmSwift.Results&lt;Caren.Task&gt;"
+                  moduleName = "Caren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/egran2911/Desktop/Caren/Caren/OneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "9C7191B4-F098-4DCD-8146-D9D513EC138B - 88bcc99a6d13f3b8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caren.OneViewController.taskArray.modify : RealmSwift.Results&lt;Caren.Task&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Caren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/egran2911/Desktop/Caren/Caren/OneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "9C7191B4-F098-4DCD-8146-D9D513EC138B - 8eb3eefebb79766d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caren.OneViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Caren.OneViewController"
+                  moduleName = "Caren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/egran2911/Desktop/Caren/Caren/OneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "844">
+               </Location>
+               <Location
+                  uuid = "9C7191B4-F098-4DCD-8146-D9D513EC138B - d154fbcdc7860f57"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caren.OneViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Caren.OneViewController&gt;"
+                  moduleName = "Caren"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/egran2911/Desktop/Caren/Caren/OneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19B885DB-7606-48E4-B3A0-048BA8DF7021"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caren/OneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewWillDisappear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

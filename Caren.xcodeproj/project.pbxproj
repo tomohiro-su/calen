@@ -11,6 +11,10 @@
 		2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612324A578A00005AF60 /* dayViewController.swift */; };
 		2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612524A57ED30005AF60 /* dataViewController.swift */; };
 		2C0B612824A57F760005AF60 /* playViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612724A57F760005AF60 /* playViewController.swift */; };
+		2C1FC8C324A5D9C600285ECC /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC8C224A5D9C600285ECC /* MicViewController.swift */; };
+		2C1FC8C524A5D9DE00285ECC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC8C424A5D9DE00285ECC /* CameraViewController.swift */; };
+		2C1FC8C924A5E60700285ECC /* TabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC8C824A5E60700285ECC /* TabBarContoller.swift */; };
+		2C1FC8CD24A5F91900285ECC /* CarenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC8CC24A5F91900285ECC /* CarenViewController.swift */; };
 		2C6A5989249D83FE00B206C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A5988249D83FE00B206C7 /* AppDelegate.swift */; };
 		2C6A598B249D83FE00B206C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A598A249D83FE00B206C7 /* SceneDelegate.swift */; };
 		2C6A598D249D83FE00B206C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A598C249D83FE00B206C7 /* ViewController.swift */; };
@@ -18,15 +22,18 @@
 		2C6A5992249D83FF00B206C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5991249D83FF00B206C7 /* Assets.xcassets */; };
 		2C6A5995249D83FF00B206C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5993249D83FF00B206C7 /* LaunchScreen.storyboard */; };
 		2C74104424A55ABB000CA5A8 /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74104324A55ABB000CA5A8 /* task.swift */; };
-		EDF4FFEE37CBB4EEC489E03C /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADAE7D88A0A8F20889246A7 /* Pods_Caren.framework */; };
+		40E607F203A697E119543700 /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E048F76776A2E67FC05A2134 /* Pods_Caren.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0ADAE7D88A0A8F20889246A7 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0B612124A56A150005AF60 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		2C0B612324A578A00005AF60 /* dayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayViewController.swift; sourceTree = "<group>"; };
 		2C0B612524A57ED30005AF60 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
 		2C0B612724A57F760005AF60 /* playViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playViewController.swift; sourceTree = "<group>"; };
+		2C1FC8C224A5D9C600285ECC /* MicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
+		2C1FC8C424A5D9DE00285ECC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2C1FC8C824A5E60700285ECC /* TabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContoller.swift; sourceTree = "<group>"; };
+		2C1FC8CC24A5F91900285ECC /* CarenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarenViewController.swift; sourceTree = "<group>"; };
 		2C6A5985249D83FE00B206C7 /* Caren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6A5988249D83FE00B206C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6A598A249D83FE00B206C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +43,9 @@
 		2C6A5994249D83FF00B206C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6A5996249D83FF00B206C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C74104324A55ABB000CA5A8 /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
-		3751C1598958255700B92D9C /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
-		C7B709E0E87C28A6F2542DC3 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
+		7A0F4075E2EC2A59550BACB4 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
+		C382B0CDD4AB09D565AE4A40 /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
+		E048F76776A2E67FC05A2134 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF4FFEE37CBB4EEC489E03C /* Pods_Caren.framework in Frameworks */,
+				40E607F203A697E119543700 /* Pods_Caren.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +66,7 @@
 				2C6A5987249D83FE00B206C7 /* Caren */,
 				2C6A5986249D83FE00B206C7 /* Products */,
 				4F361AC0E3C87782AD2232F7 /* Pods */,
-				76BA9BE9A7AF4BFECA22D81C /* Frameworks */,
+				43E9A5C3DDBA7F08BB85EDD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				2C6A5988249D83FE00B206C7 /* AppDelegate.swift */,
+				2C1FC8C824A5E60700285ECC /* TabBarContoller.swift */,
+				2C1FC8CC24A5F91900285ECC /* CarenViewController.swift */,
 				2C6A598A249D83FE00B206C7 /* SceneDelegate.swift */,
 				2C74104324A55ABB000CA5A8 /* task.swift */,
 				2C6A598C249D83FE00B206C7 /* ViewController.swift */,
+				2C1FC8C224A5D9C600285ECC /* MicViewController.swift */,
+				2C1FC8C424A5D9DE00285ECC /* CameraViewController.swift */,
 				2C0B612724A57F760005AF60 /* playViewController.swift */,
 				2C0B612324A578A00005AF60 /* dayViewController.swift */,
 				2C0B612124A56A150005AF60 /* OneViewController.swift */,
@@ -89,21 +101,21 @@
 			path = Caren;
 			sourceTree = "<group>";
 		};
+		43E9A5C3DDBA7F08BB85EDD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E048F76776A2E67FC05A2134 /* Pods_Caren.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F361AC0E3C87782AD2232F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C7B709E0E87C28A6F2542DC3 /* Pods-Caren.debug.xcconfig */,
-				3751C1598958255700B92D9C /* Pods-Caren.release.xcconfig */,
+				7A0F4075E2EC2A59550BACB4 /* Pods-Caren.debug.xcconfig */,
+				C382B0CDD4AB09D565AE4A40 /* Pods-Caren.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		76BA9BE9A7AF4BFECA22D81C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0ADAE7D88A0A8F20889246A7 /* Pods_Caren.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,11 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C6A5999249D83FF00B206C7 /* Build configuration list for PBXNativeTarget "Caren" */;
 			buildPhases = (
-				EEE9DDE5CF17AC4031322AA4 /* [CP] Check Pods Manifest.lock */,
+				987C13DA92D2EF5DCB93C11D /* [CP] Check Pods Manifest.lock */,
 				2C6A5981249D83FE00B206C7 /* Sources */,
 				2C6A5982249D83FE00B206C7 /* Frameworks */,
 				2C6A5983249D83FE00B206C7 /* Resources */,
-				CBBE56EA18B572F44DE0A9D9 /* [CP] Embed Pods Frameworks */,
+				EFCE9388AFA0F87036C8F4CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,24 +187,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CBBE56EA18B572F44DE0A9D9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEE9DDE5CF17AC4031322AA4 /* [CP] Check Pods Manifest.lock */ = {
+		987C13DA92D2EF5DCB93C11D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,6 +209,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EFCE9388AFA0F87036C8F4CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,13 +234,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0B612824A57F760005AF60 /* playViewController.swift in Sources */,
+				2C1FC8C524A5D9DE00285ECC /* CameraViewController.swift in Sources */,
 				2C74104424A55ABB000CA5A8 /* task.swift in Sources */,
 				2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */,
 				2C0B612224A56A150005AF60 /* OneViewController.swift in Sources */,
 				2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */,
 				2C6A598D249D83FE00B206C7 /* ViewController.swift in Sources */,
 				2C6A5989249D83FE00B206C7 /* AppDelegate.swift in Sources */,
+				2C1FC8CD24A5F91900285ECC /* CarenViewController.swift in Sources */,
+				2C1FC8C924A5E60700285ECC /* TabBarContoller.swift in Sources */,
 				2C6A598B249D83FE00B206C7 /* SceneDelegate.swift in Sources */,
+				2C1FC8C324A5D9C600285ECC /* MicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +386,7 @@
 		};
 		2C6A599A249D83FF00B206C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B709E0E87C28A6F2542DC3 /* Pods-Caren.debug.xcconfig */;
+			baseConfigurationReference = 7A0F4075E2EC2A59550BACB4 /* Pods-Caren.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,7 +404,7 @@
 		};
 		2C6A599B249D83FF00B206C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3751C1598958255700B92D9C /* Pods-Caren.release.xcconfig */;
+			baseConfigurationReference = C382B0CDD4AB09D565AE4A40 /* Pods-Caren.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
