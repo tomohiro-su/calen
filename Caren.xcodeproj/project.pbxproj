@@ -18,10 +18,11 @@
 		2C6A5992249D83FF00B206C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5991249D83FF00B206C7 /* Assets.xcassets */; };
 		2C6A5995249D83FF00B206C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5993249D83FF00B206C7 /* LaunchScreen.storyboard */; };
 		2C74104424A55ABB000CA5A8 /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74104324A55ABB000CA5A8 /* task.swift */; };
-		C3CF912AB09436116B99F62A /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4766B576094E003D59F1E8 /* Pods_Caren.framework */; };
+		EDF4FFEE37CBB4EEC489E03C /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADAE7D88A0A8F20889246A7 /* Pods_Caren.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ADAE7D88A0A8F20889246A7 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0B612124A56A150005AF60 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		2C0B612324A578A00005AF60 /* dayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayViewController.swift; sourceTree = "<group>"; };
 		2C0B612524A57ED30005AF60 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +36,8 @@
 		2C6A5994249D83FF00B206C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6A5996249D83FF00B206C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C74104324A55ABB000CA5A8 /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
-		5B4766B576094E003D59F1E8 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DA62E991450307D0F68631A /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
-		9346BCFE4E4451F05D02BFD9 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
+		3751C1598958255700B92D9C /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
+		C7B709E0E87C28A6F2542DC3 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3CF912AB09436116B99F62A /* Pods_Caren.framework in Frameworks */,
+				EDF4FFEE37CBB4EEC489E03C /* Pods_Caren.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,7 @@
 				2C6A5987249D83FE00B206C7 /* Caren */,
 				2C6A5986249D83FE00B206C7 /* Products */,
 				4F361AC0E3C87782AD2232F7 /* Pods */,
-				350FE74FF711EC697A91F97E /* Frameworks */,
+				76BA9BE9A7AF4BFECA22D81C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,21 +89,21 @@
 			path = Caren;
 			sourceTree = "<group>";
 		};
-		350FE74FF711EC697A91F97E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5B4766B576094E003D59F1E8 /* Pods_Caren.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4F361AC0E3C87782AD2232F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9346BCFE4E4451F05D02BFD9 /* Pods-Caren.debug.xcconfig */,
-				5DA62E991450307D0F68631A /* Pods-Caren.release.xcconfig */,
+				C7B709E0E87C28A6F2542DC3 /* Pods-Caren.debug.xcconfig */,
+				3751C1598958255700B92D9C /* Pods-Caren.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		76BA9BE9A7AF4BFECA22D81C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ADAE7D88A0A8F20889246A7 /* Pods_Caren.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,11 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C6A5999249D83FF00B206C7 /* Build configuration list for PBXNativeTarget "Caren" */;
 			buildPhases = (
-				9899F9724ABCBE64948ACD6C /* [CP] Check Pods Manifest.lock */,
+				EEE9DDE5CF17AC4031322AA4 /* [CP] Check Pods Manifest.lock */,
 				2C6A5981249D83FE00B206C7 /* Sources */,
 				2C6A5982249D83FE00B206C7 /* Frameworks */,
 				2C6A5983249D83FE00B206C7 /* Resources */,
-				C87907B008D222977FCD88F2 /* [CP] Embed Pods Frameworks */,
+				CBBE56EA18B572F44DE0A9D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,7 +175,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9899F9724ABCBE64948ACD6C /* [CP] Check Pods Manifest.lock */ = {
+		CBBE56EA18B572F44DE0A9D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE9DDE5CF17AC4031322AA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,23 +212,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C87907B008D222977FCD88F2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,7 +370,7 @@
 		};
 		2C6A599A249D83FF00B206C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9346BCFE4E4451F05D02BFD9 /* Pods-Caren.debug.xcconfig */;
+			baseConfigurationReference = C7B709E0E87C28A6F2542DC3 /* Pods-Caren.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,7 +388,7 @@
 		};
 		2C6A599B249D83FF00B206C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA62E991450307D0F68631A /* Pods-Caren.release.xcconfig */;
+			baseConfigurationReference = 3751C1598958255700B92D9C /* Pods-Caren.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

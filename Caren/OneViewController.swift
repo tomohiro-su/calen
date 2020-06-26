@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class OneViewController: UIViewController {
     
@@ -33,13 +34,13 @@ class OneViewController: UIViewController {
     @IBAction func memBotton(_ sender: Any) {
         //日時の変換
         let dt = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
         
         //MARK:realmに書き込む
         try! realm.write {
             self.task.id = idCount
-            self.task.date = dateFormatter.string(from: dt)
+            self.task.date = dt
             self.realm.add(self.task, update: .modified)
             idCount += idCount
         }
