@@ -14,4 +14,6 @@ target 'Caren' do
   # Pods for Caren
 pod 'CLImageEditor/AllTools','0.2.4'
 
+pod 'TaggerKit'
+
 end

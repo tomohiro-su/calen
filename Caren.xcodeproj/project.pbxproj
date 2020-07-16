@@ -22,7 +22,7 @@
 		2C6A5992249D83FF00B206C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5991249D83FF00B206C7 /* Assets.xcassets */; };
 		2C6A5995249D83FF00B206C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5993249D83FF00B206C7 /* LaunchScreen.storyboard */; };
 		2C74104424A55ABB000CA5A8 /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74104324A55ABB000CA5A8 /* task.swift */; };
-		40E607F203A697E119543700 /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E048F76776A2E67FC05A2134 /* Pods_Caren.framework */; };
+		7DD60003EC8E9E05C775AE9B /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8D3343FDC75C31B94FB6E4 /* Pods_Caren.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +43,9 @@
 		2C6A5994249D83FF00B206C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6A5996249D83FF00B206C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C74104324A55ABB000CA5A8 /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
-		7A0F4075E2EC2A59550BACB4 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
-		C382B0CDD4AB09D565AE4A40 /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
-		E048F76776A2E67FC05A2134 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8D3343FDC75C31B94FB6E4 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89281354AA55F2236487FC21 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
+		C0F856753F7F84B2ABBDD920 /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E607F203A697E119543700 /* Pods_Caren.framework in Frameworks */,
+				7DD60003EC8E9E05C775AE9B /* Pods_Caren.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 				2C6A5987249D83FE00B206C7 /* Caren */,
 				2C6A5986249D83FE00B206C7 /* Products */,
 				4F361AC0E3C87782AD2232F7 /* Pods */,
-				43E9A5C3DDBA7F08BB85EDD9 /* Frameworks */,
+				E6D0482B17205239D3B17188 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,21 +101,21 @@
 			path = Caren;
 			sourceTree = "<group>";
 		};
-		43E9A5C3DDBA7F08BB85EDD9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E048F76776A2E67FC05A2134 /* Pods_Caren.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4F361AC0E3C87782AD2232F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7A0F4075E2EC2A59550BACB4 /* Pods-Caren.debug.xcconfig */,
-				C382B0CDD4AB09D565AE4A40 /* Pods-Caren.release.xcconfig */,
+				89281354AA55F2236487FC21 /* Pods-Caren.debug.xcconfig */,
+				C0F856753F7F84B2ABBDD920 /* Pods-Caren.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6D0482B17205239D3B17188 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F8D3343FDC75C31B94FB6E4 /* Pods_Caren.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,11 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C6A5999249D83FF00B206C7 /* Build configuration list for PBXNativeTarget "Caren" */;
 			buildPhases = (
-				987C13DA92D2EF5DCB93C11D /* [CP] Check Pods Manifest.lock */,
+				90496CB0438A0780A5F9A78D /* [CP] Check Pods Manifest.lock */,
 				2C6A5981249D83FE00B206C7 /* Sources */,
 				2C6A5982249D83FE00B206C7 /* Frameworks */,
 				2C6A5983249D83FE00B206C7 /* Resources */,
-				EFCE9388AFA0F87036C8F4CE /* [CP] Embed Pods Frameworks */,
+				1385F33802B6C8C024250A59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,7 +187,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		987C13DA92D2EF5DCB93C11D /* [CP] Check Pods Manifest.lock */ = {
+		1385F33802B6C8C024250A59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90496CB0438A0780A5F9A78D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,23 +224,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFCE9388AFA0F87036C8F4CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -386,7 +386,7 @@
 		};
 		2C6A599A249D83FF00B206C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A0F4075E2EC2A59550BACB4 /* Pods-Caren.debug.xcconfig */;
+			baseConfigurationReference = 89281354AA55F2236487FC21 /* Pods-Caren.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,7 +404,7 @@
 		};
 		2C6A599B249D83FF00B206C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C382B0CDD4AB09D565AE4A40 /* Pods-Caren.release.xcconfig */;
+			baseConfigurationReference = C0F856753F7F84B2ABBDD920 /* Pods-Caren.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

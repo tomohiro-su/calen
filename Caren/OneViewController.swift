@@ -9,30 +9,47 @@
 import UIKit
 import RealmSwift
 import UserNotifications
+import TaggerKit
 
 class OneViewController: UIViewController {
     
     @IBOutlet weak var memBotton: UIButton!
     @IBOutlet weak var inputTextField: UITextField!
-    
+    @IBOutlet var containerView: UIView!
     
     let realm = try! Realm()
     var task: Task!
+    
     var idCount = 0
     var contents = ""
     var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
-    
+    var tagCollection = TKCollectionView()
+   
+    //MARK:最初に読まれる所
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 背景をタップしたらdismissKeyboardメソッドを呼ぶように設定する
-        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dismissKeyboard))
-        self.view.addGestureRecognizer(tapGesture)
-        
-        
+    //    let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dismissKeyboard))
+    //    self.view.addGestureRecognizer(tapGesture)
+    //    add(tagCollection, toView: containerView)
+    //    tagCollection.tags = ["Some", "Tag", "For", "You"]
     }
-
-    //MARK:memボタン押す
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let OneVC:OneViewController = segue.destination as! OneViewController
+        if segue.identifier == "cellSegue" {
+            let indexPath = self.tableView.indexPathForSelectedRow
+            OneVC.task = taskArray[indexPath!.row]
+        } else {
+            let task = Task()
+            let allTasks = realm.objects(Task.self)
+            if allTasks.count != 0 {
+                task.id = allTasks.max(ofProperty: "id")! + 1
+//            }
+            OneViewController.task = task
+        }
+    }    //MARK:memボタン押す
     
     override func viewWillDisappear(_ animated: Bool) {
         
@@ -43,11 +60,11 @@ class OneViewController: UIViewController {
         
         //MARK:realmに書き込む
         try! realm.write {
-            self.task.id = idCount
+            self.task.id = task.id
             self.task.date = dt
             self.task.contents = self.inputTextField.text!
             self.realm.add(self.task, update: .modified)
-            idCount += idCount
+        
         }
         
         setNotification(task: task)

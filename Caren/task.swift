@@ -18,7 +18,7 @@ class Task: Object {
     // 内容
     @objc dynamic var contents = ""
 
-    // 日時
+    // 登録日時
     @objc dynamic var date = Date()
 
     // start日時
