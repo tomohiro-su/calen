@@ -10,14 +10,33 @@ import UIKit
 import RealmSwift
 import UserNotifications
 
-class dayViewController: UIViewController, UITableViewDelegate,UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return taskArray.count
-    }
+class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var dayTableView: UITableView!
+
+    // Realmインスタンスを取得する
+       let realm = try! Realm()
+    var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
+    let task : String = ""
+    
+    // データの数（＝セルの数）を返すメソッド
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    // 各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for:indexPath)
-        cell.textLabel?.text = taskArray[indexPath.row]
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)
+        let task = taskArray[indexPath.row]
+        
+        cell.textLabel?.text = task.title
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        let dateString:String = formatter.string(from: task.date)
+        cell.detailTextLabel?.text = dateString
+        
         
         return cell
     }
@@ -30,22 +49,14 @@ class dayViewController: UIViewController, UITableViewDelegate,UITableViewDelega
     @IBOutlet weak var startDayLabel: UILabel!
     @IBOutlet weak var endDayLabel: UILabel!
     
-//    @IBOutlet weak var tableViewCell: UITableViewCell!
-    @IBOutlet weak var tableView: UITableView!
-    var task: Task!
-    
-  
-        
 
-   // invalidateLayoutCache
-    
-        let realm = try! Realm()
-     var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
-    
+   
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
+        dayTableView.delegate = self
+        dayTableView.dataSource = self
      //   MSSectionLayoutTypeHorizontalTile
   
         // Do any additional setup after loading the view.
@@ -54,14 +65,14 @@ class dayViewController: UIViewController, UITableViewDelegate,UITableViewDelega
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+        dayTableView.reloadData()
     }
     //MARK:segue で画面遷移する時に呼ばれる
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
            let oneViewController:OneViewController = segue.destination as! OneViewController
 
            if segue.identifier == "cellSegue" {
-               let indexPath = self.tableView.indexPathForSelectedRow
+               let indexPath = self.dayTableView.indexPathForSelectedRow
                oneViewController.task = taskArray[indexPath!.row]
            } else {
                let task = Task()

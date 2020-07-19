@@ -31,6 +31,9 @@ class Task: Object {
     // tag
     @objc dynamic var tag = ""
     
+    //image
+    @objc dynamic var image = ""
+    
 
     // id をプライマリーキーとして設定
     override static func primaryKey() -> String? {
