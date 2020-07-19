@@ -158,8 +158,8 @@
                     <tabBarItem key="tabBarItem" title="ハンド" image="square.and.pencil" catalog="system" id="WHM-po-4cD"/>
                     <navigationItem key="navigationItem" id="ift-UL-Mlz"/>
                     <connections>
+                        <outlet property="contentsTextField" destination="ZWO-Yf-Px1" id="062-6z-TlQ"/>
                         <outlet property="endDatePicker" destination="uvv-8r-2vN" id="YSL-HW-4qp"/>
-                        <outlet property="inputTextField" destination="ZWO-Yf-Px1" id="3Sq-pR-egr"/>
                         <outlet property="memBotton" destination="pkK-7I-B9e" id="aO8-OF-NL1"/>
                         <outlet property="startDatePicker" destination="jdk-WX-bIh" id="wbp-nH-aZP"/>
                         <outlet property="tagTextField" destination="1h4-me-i65" id="Xbc-il-4wl"/>

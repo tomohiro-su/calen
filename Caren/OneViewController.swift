@@ -31,7 +31,7 @@ class OneViewController: UIViewController {
     var idCount = 0
     var contents = ""
     var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
-    var tagCollection = TKCollectionView()
+    
     
     //MARK:最初に読まれる所
     override func viewDidLoad() {
