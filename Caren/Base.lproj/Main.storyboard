@@ -74,6 +74,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="TAP/MIC" image="memories" catalog="system"/>
                                 <connections>
+                                    <action selector="tapButton:" destination="2Jk-x1-upx" eventType="touchUpInside" id="uu2-rU-H5a"/>
                                     <segue destination="6lP-l4-r6q" kind="show" identifier="cellSegue" id="SiL-bb-8b6"/>
                                 </connections>
                             </button>
@@ -175,7 +176,7 @@
             <objects>
                 <viewController id="SbN-Yf-YHm" customClass="MicViewController" customModule="Caren" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SU1-k3-SQb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="音声入力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-tY-EK5">
@@ -210,7 +211,7 @@
             <objects>
                 <viewController id="IrL-ad-XhV" customClass="CameraViewController" customModule="Caren" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NLd-wH-uPb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoQ-bc-3xA">

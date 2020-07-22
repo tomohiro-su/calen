@@ -11,17 +11,17 @@ import RealmSwift
 import UserNotifications
 
 class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
     @IBOutlet weak var dayTableView: UITableView!
 
     // Realmインスタンスを取得する
        let realm = try! Realm()
     var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
-    let task : String = ""
+    //let task : String = ""
     
+            var task : Task!
     // データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return taskArray.count
     }
     // 各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -29,19 +29,24 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)
         let task = taskArray[indexPath.row]
         
-        cell.textLabel?.text = task.title
+        cell.textLabel?.text = "tatle:\(task.title)"
+        cell.contentsLabel?.text = "tatle:\(task.contents)"
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         
         let dateString:String = formatter.string(from: task.date)
         cell.detailTextLabel?.text = dateString
+        let _:String = formatter.string(from: task.startDate)
+              cell.detailTextLabel?.text = dateString
+        let _:String = formatter.string(from: task.endDate)
+              cell.detailTextLabel?.text = dateString
         
         
         return cell
     }
     
-    
+  
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tagLabel: UILabel!
     @IBOutlet weak var coutentsLabel: UILabel!
