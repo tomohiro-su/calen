@@ -11,6 +11,7 @@
 		2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612324A578A00005AF60 /* dayViewController.swift */; };
 		2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612524A57ED30005AF60 /* dataViewController.swift */; };
 		2C0B612824A57F760005AF60 /* playViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612724A57F760005AF60 /* playViewController.swift */; };
+		2C117A7E24C8A700006540B6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C117A7D24C8A700006540B6 /* TableViewCell.swift */; };
 		2C1FC8C324A5D9C600285ECC /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC8C224A5D9C600285ECC /* MicViewController.swift */; };
 		2C1FC8C524A5D9DE00285ECC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC8C424A5D9DE00285ECC /* CameraViewController.swift */; };
 		2C1FC8C924A5E60700285ECC /* TabBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC8C824A5E60700285ECC /* TabBarContoller.swift */; };
@@ -22,16 +23,18 @@
 		2C6A5992249D83FF00B206C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5991249D83FF00B206C7 /* Assets.xcassets */; };
 		2C6A5995249D83FF00B206C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A5993249D83FF00B206C7 /* LaunchScreen.storyboard */; };
 		2C74104424A55ABB000CA5A8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74104324A55ABB000CA5A8 /* Task.swift */; };
+		2C76779524C982D5001DFEE6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76779324C982D5001DFEE6 /* PostTableViewCell.swift */; };
+		2C76779624C982D5001DFEE6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C76779424C982D5001DFEE6 /* PostTableViewCell.xib */; };
 		2CFA179D24C1CED4000E306F /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA179C24C1CED4000E306F /* testView.xib */; };
-		80DEC63B19BE16712ADC9404 /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C27C03D25405D85D80524 /* Pods_Caren.framework */; };
+		ECC4432A1A71D05C62DACB56 /* Pods_Caren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A522AE248978C86081DD79 /* Pods_Caren.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1735528369B3B74F7D3656BC /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
 		2C0B612124A56A150005AF60 /* oneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneViewController.swift; sourceTree = "<group>"; };
 		2C0B612324A578A00005AF60 /* dayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayViewController.swift; sourceTree = "<group>"; };
 		2C0B612524A57ED30005AF60 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
 		2C0B612724A57F760005AF60 /* playViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playViewController.swift; sourceTree = "<group>"; };
+		2C117A7D24C8A700006540B6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2C1FC8C224A5D9C600285ECC /* MicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
 		2C1FC8C424A5D9DE00285ECC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		2C1FC8C824A5E60700285ECC /* TabBarContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContoller.swift; sourceTree = "<group>"; };
@@ -45,9 +48,12 @@
 		2C6A5994249D83FF00B206C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6A5996249D83FF00B206C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C74104324A55ABB000CA5A8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2C76779324C982D5001DFEE6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		2C76779424C982D5001DFEE6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		2CFA179C24C1CED4000E306F /* testView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
-		716C27C03D25405D85D80524 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		816A7E88279F69388A79125E /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
+		612C1A3C0C43EE001D2991D9 /* Pods-Caren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.debug.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.debug.xcconfig"; sourceTree = "<group>"; };
+		8E12F0F4624A8AB3C9906CB8 /* Pods-Caren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caren.release.xcconfig"; path = "Target Support Files/Pods-Caren/Pods-Caren.release.xcconfig"; sourceTree = "<group>"; };
+		E4A522AE248978C86081DD79 /* Pods_Caren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +61,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80DEC63B19BE16712ADC9404 /* Pods_Caren.framework in Frameworks */,
+				ECC4432A1A71D05C62DACB56 /* Pods_Caren.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A89D0CC77B32708CE88F832 /* Frameworks */ = {
+		05AAA59637B4EE8E23DFA89B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				716C27C03D25405D85D80524 /* Pods_Caren.framework */,
+				E4A522AE248978C86081DD79 /* Pods_Caren.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,7 +83,7 @@
 				2C6A5987249D83FE00B206C7 /* Caren */,
 				2C6A5986249D83FE00B206C7 /* Products */,
 				4F361AC0E3C87782AD2232F7 /* Pods */,
-				2A89D0CC77B32708CE88F832 /* Frameworks */,
+				05AAA59637B4EE8E23DFA89B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +109,14 @@
 				2C0B612324A578A00005AF60 /* dayViewController.swift */,
 				2C0B612124A56A150005AF60 /* oneViewController.swift */,
 				2C6A598E249D83FE00B206C7 /* Main.storyboard */,
+				2C117A7D24C8A700006540B6 /* TableViewCell.swift */,
 				2CFA179C24C1CED4000E306F /* testView.xib */,
 				2C6A5991249D83FF00B206C7 /* Assets.xcassets */,
 				2C6A5993249D83FF00B206C7 /* LaunchScreen.storyboard */,
 				2C6A5996249D83FF00B206C7 /* Info.plist */,
 				2C0B612524A57ED30005AF60 /* dataViewController.swift */,
+				2C76779324C982D5001DFEE6 /* PostTableViewCell.swift */,
+				2C76779424C982D5001DFEE6 /* PostTableViewCell.xib */,
 			);
 			path = Caren;
 			sourceTree = "<group>";
@@ -115,8 +124,8 @@
 		4F361AC0E3C87782AD2232F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1735528369B3B74F7D3656BC /* Pods-Caren.debug.xcconfig */,
-				816A7E88279F69388A79125E /* Pods-Caren.release.xcconfig */,
+				612C1A3C0C43EE001D2991D9 /* Pods-Caren.debug.xcconfig */,
+				8E12F0F4624A8AB3C9906CB8 /* Pods-Caren.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -128,11 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C6A5999249D83FF00B206C7 /* Build configuration list for PBXNativeTarget "Caren" */;
 			buildPhases = (
-				EC332B1EA734D8358092D055 /* [CP] Check Pods Manifest.lock */,
+				2BAA1E13CB908E8DFEA4C119 /* [CP] Check Pods Manifest.lock */,
 				2C6A5981249D83FE00B206C7 /* Sources */,
 				2C6A5982249D83FE00B206C7 /* Frameworks */,
 				2C6A5983249D83FE00B206C7 /* Resources */,
-				38034E429AC35393376E6AC9 /* [CP] Embed Pods Frameworks */,
+				ABC150BE1F623879704C0667 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CFA179D24C1CED4000E306F /* testView.xib in Resources */,
+				2C76779624C982D5001DFEE6 /* PostTableViewCell.xib in Resources */,
 				2C6A5995249D83FF00B206C7 /* LaunchScreen.storyboard in Resources */,
 				2C6A5992249D83FF00B206C7 /* Assets.xcassets in Resources */,
 				2C6A5990249D83FE00B206C7 /* Main.storyboard in Resources */,
@@ -191,24 +201,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38034E429AC35393376E6AC9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC332B1EA734D8358092D055 /* [CP] Check Pods Manifest.lock */ = {
+		2BAA1E13CB908E8DFEA4C119 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,6 +223,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ABC150BE1F623879704C0667 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caren/Pods-Caren-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,12 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C117A7E24C8A700006540B6 /* TableViewCell.swift in Sources */,
 				2C0B612824A57F760005AF60 /* playViewController.swift in Sources */,
 				2C1FC8C524A5D9DE00285ECC /* CameraViewController.swift in Sources */,
 				2C74104424A55ABB000CA5A8 /* Task.swift in Sources */,
 				2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */,
 				2C0B612224A56A150005AF60 /* oneViewController.swift in Sources */,
 				2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */,
+				2C76779524C982D5001DFEE6 /* PostTableViewCell.swift in Sources */,
 				2C6A598D249D83FE00B206C7 /* ViewController.swift in Sources */,
 				2C6A5989249D83FE00B206C7 /* AppDelegate.swift in Sources */,
 				2C1FC8CD24A5F91900285ECC /* CarenViewController.swift in Sources */,
@@ -390,7 +402,7 @@
 		};
 		2C6A599A249D83FF00B206C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1735528369B3B74F7D3656BC /* Pods-Caren.debug.xcconfig */;
+			baseConfigurationReference = 612C1A3C0C43EE001D2991D9 /* Pods-Caren.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -408,7 +420,7 @@
 		};
 		2C6A599B249D83FF00B206C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 816A7E88279F69388A79125E /* Pods-Caren.release.xcconfig */;
+			baseConfigurationReference = 8E12F0F4624A8AB3C9906CB8 /* Pods-Caren.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
