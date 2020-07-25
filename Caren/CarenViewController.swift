@@ -31,12 +31,12 @@ class CarenViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSou
         // Do any additional setup after loading the view.
     }
     
-    func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
-        let cell = calendar.dequeueReusableCell(withIdentifier: "cell", for: date, at: position)
-        // cellのデザインを変更
-        return cell
-    }
-    
+//    func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
+//        let cell = calendar.dequeueReusableCell(withIdentifier: "cell", for: date, at: position)
+//        // cellのデザインを変更
+//        return cell
+//    }
+//
     //    func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at position: FSCalendarMonthPosition) {
     //        self.configure(cell: cell, for: date, at: position)
     //        // cellのデザインを変更

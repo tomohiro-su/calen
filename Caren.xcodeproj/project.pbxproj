@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C0B612224A56A150005AF60 /* oneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612124A56A150005AF60 /* oneViewController.swift */; };
+		2C0B612224A56A150005AF60 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612124A56A150005AF60 /* OneViewController.swift */; };
 		2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612324A578A00005AF60 /* dayViewController.swift */; };
 		2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612524A57ED30005AF60 /* dataViewController.swift */; };
 		2C0B612824A57F760005AF60 /* playViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612724A57F760005AF60 /* playViewController.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C0B612124A56A150005AF60 /* oneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneViewController.swift; sourceTree = "<group>"; };
+		2C0B612124A56A150005AF60 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		2C0B612324A578A00005AF60 /* dayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayViewController.swift; sourceTree = "<group>"; };
 		2C0B612524A57ED30005AF60 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
 		2C0B612724A57F760005AF60 /* playViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				2C1FC8C424A5D9DE00285ECC /* CameraViewController.swift */,
 				2C0B612724A57F760005AF60 /* playViewController.swift */,
 				2C0B612324A578A00005AF60 /* dayViewController.swift */,
-				2C0B612124A56A150005AF60 /* oneViewController.swift */,
+				2C0B612124A56A150005AF60 /* OneViewController.swift */,
 				2C6A598E249D83FE00B206C7 /* Main.storyboard */,
 				2C117A7D24C8A700006540B6 /* TableViewCell.swift */,
 				2CFA179C24C1CED4000E306F /* testView.xib */,
@@ -252,7 +252,7 @@
 				2C1FC8C524A5D9DE00285ECC /* CameraViewController.swift in Sources */,
 				2C74104424A55ABB000CA5A8 /* Task.swift in Sources */,
 				2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */,
-				2C0B612224A56A150005AF60 /* oneViewController.swift in Sources */,
+				2C0B612224A56A150005AF60 /* OneViewController.swift in Sources */,
 				2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */,
 				2C76779524C982D5001DFEE6 /* PostTableViewCell.swift in Sources */,
 				2C6A598D249D83FE00B206C7 /* ViewController.swift in Sources */,
