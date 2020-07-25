@@ -11,9 +11,10 @@ import RealmSwift
 import UserNotifications
 
 class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-  
+    
     
     @IBOutlet weak var dayTableView: UITableView!
+    @IBOutlet weak var changeB: UIButton!
     
     // Realmインスタンスを取得する
     let realm = try! Realm()
@@ -23,15 +24,13 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     var task : Task!
     // データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-   //     return taskArray.count
-     return 1
+        return taskArray.count
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 400
     }
-    
-    
     
     // カスタムセルを登録する
     // let nib = UINib(nibName: "PostTableViewCell", bundle: nil)
@@ -40,36 +39,38 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     // 各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+    
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)
         let cellImage = cell.viewWithTag(1) as! UIImageView
         let task = taskArray[indexPath.row]
-        cellImage.image = UIImage(named: "IMG_2006")
-
+        cellImage.image = UIImage(named: task.image)
+        
         let cellLabel = cell.viewWithTag(2) as! UILabel
+
         print(task.title)
         cellLabel.textColor = .black
-        cellLabel.text! = "tatle:\(task.title)\n"
-         print(cellLabel.text!)
-        cellLabel.text! = cellLabel.text! + "contents:\(task.contents)\n"
+        cellLabel.text! = "T:\(task.title)\n"
         print(cellLabel.text!)
+        
+    
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         
-        let dateString:String = formatter.string(from: task.date)
-        cellLabel.text! = cellLabel.text! + "date:\(dateString)\n"
-         print(cellLabel.text!)
+        //        let dateString:String = formatter.string(from: task.date)
+        //        cellLabel.text! = cellLabel.text! + "date:\(dateString)\n"
+        //         print(cellLabel.text!)
         let dateString2:String = formatter.string(from: task.startDate)
-        cellLabel.text! = cellLabel.text! + "Start:\(dateString2)\n"
-         print(cellLabel.text!)
+        cellLabel.text! = cellLabel.text! + "S:\(dateString2)\n"
+        print(cellLabel.text!)
         let dateString3:String = formatter.string(from: task.endDate)
-        cellLabel.text! = cellLabel.text! + "End:\(dateString3)\n"
-         print(cellLabel.text!)
+        cellLabel.text! = cellLabel.text! + "E:\(dateString3)\n"
+        print(cellLabel.text!)
+        cellLabel.text! = cellLabel.text! + "Contents:\n\(task.contents)\n"
         
         return cell
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,9 +131,21 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             }
         }
     }
-
-//    func hmLine(hm:date){
-//
-//    }
+    
+        func hmLine(){
+            let time = view.viewWithTag(1) as? UILabel
+            time?.text = "ラベルです。"
+        }
+    
+    @IBAction func changeB(_ sender: Any) {
+        for i in 1..<13{
+          let j = i*100+1
+         let time = view.viewWithTag(j) as? UILabel
+                   time?.text = "\(String(i)):00"
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+    }
     
 }
