@@ -40,20 +40,20 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     // 各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)
         let cellImage = cell.viewWithTag(1) as! UIImageView
         let task = taskArray[indexPath.row]
         cellImage.image = UIImage(named: task.image)
         
         let cellLabel = cell.viewWithTag(2) as! UILabel
-
+        
         print(task.title)
         cellLabel.textColor = .black
         cellLabel.text! = "T:\(task.title)\n"
         print(cellLabel.text!)
         
-    
+        
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
@@ -89,22 +89,25 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     //MARK:segue で画面遷移する時に呼ばれる
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let oneViewController:OneViewController = segue.destination as! OneViewController
-        
-        if segue.identifier == "cellSegue" {
-            let indexPath = self.dayTableView.indexPathForSelectedRow
-            oneViewController.task = taskArray[indexPath!.row]
-        } else {
-            let task = Task()
+        if segue.identifier != "toCalen"{
+            let oneViewController:OneViewController = segue.destination as! OneViewController
             
-            let allTasks = realm.objects(Task.self)
-            if allTasks.count != 0 {
-                task.id = allTasks.max(ofProperty: "id")! + 1
+            if segue.identifier == "cellSegue" {
+                let indexPath = self.dayTableView.indexPathForSelectedRow
+                oneViewController.task = taskArray[indexPath!.row]
+            } else {
+                let task = Task()
+                
+                let allTasks = realm.objects(Task.self)
+                if allTasks.count != 0 {
+                    task.id = allTasks.max(ofProperty: "id")! + 1
+                }
+                
+                oneViewController.task = task
             }
-            
-            oneViewController.task = task
         }
     }
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         // --- ここから ---
@@ -133,39 +136,39 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
-        func hmLine(){
-            let time = view.viewWithTag(1) as? UILabel
-            time?.text = "ラベルです。"
-        }
+    func hmLine(){
+        let time = view.viewWithTag(1) as? UILabel
+        time?.text = "ラベルです。"
+    }
     
     @IBAction func changeB(_ sender: Any) {
         for i in 1..<13{
-          let j = i*100+1
-         let time = view.viewWithTag(j) as? UILabel
-                   time?.text = "\(String(i)):00"
+            let j = i*100+1
+            let time = view.viewWithTag(j) as? UILabel
+            time?.text = "\(String(i)):00"
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
-                let formatter = DateFormatter()
+        let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         task = taskArray[indexPath.row]
-         let dateString:String = formatter.string(from: task.startDate)
+        let dateString:String = formatter.string(from: task.startDate)
         print(dateString)
         let time = view.viewWithTag(1000) as? UILabel
         time?.text = dateString
         formatter.dateFormat = "HH"
         let dateString4:String = formatter.string(from: task.startDate)
-               print(dateString4)
+        print(dateString4)
         timeCodeReset()
         timeCode(hour: Int(dateString4)!)
     }
     
     func timeCode(hour:Int){
-    
-         let j = (hour+1)*100+2
+        
+        let j = (hour+1)*100+2
         let time = view.viewWithTag(j) as? UILabel
-                  time?.text = "○"
+        time?.text = "○"
         
     }
     func timeCodeReset(){
@@ -173,11 +176,9 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             let  j = i*100+2
             let time = view.viewWithTag(j) as? UILabel
             time?.text = "ー"
-       }
+        }
     }
     @IBAction func toCalenBotton(_ sender: Any) {
         
     }
-    
-    
 }

@@ -56,7 +56,7 @@ class OneViewController: UIViewController {
         //
         
         
-        self.task = Task()
+        self.task = Task()//重要インスタンス
         let allTasks = realm.objects(Task.self)
         if allTasks.count != 0 {
             self.task.id = allTasks.max(ofProperty: "id")! + 1
@@ -73,11 +73,7 @@ class OneViewController: UIViewController {
         print(dt)
         print(self.startDatePicker.date)
         print(self.endDatePicker.date)
-     //   print(self.tagTextField.text!)
-        //日時の変換
-        
-        //        let dateFormatter = DateFormatter()
-        //        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
+
         
         //MARK:realmに書き込む
         try! realm.write {
@@ -106,7 +102,7 @@ class OneViewController: UIViewController {
             
         }
         
-        //setNotification(task: task)
+        setNotification(task: task)
         //super.viewWillDisappear(animated)
     }
     @objc func dismissKeyboard(){
@@ -150,7 +146,7 @@ class OneViewController: UIViewController {
                 print("---------------/")
             }
         }
-    } // --- ここまで追加 ---
+    }
 }
 
 
