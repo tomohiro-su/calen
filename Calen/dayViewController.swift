@@ -15,6 +15,7 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var dayTableView: UITableView!
     @IBOutlet weak var changeB: UIButton!
+    @IBOutlet weak var toCalenButton: UIButton!
     
     // Realmインスタンスを取得する
     let realm = try! Realm()
@@ -146,6 +147,37 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
+                let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        task = taskArray[indexPath.row]
+         let dateString:String = formatter.string(from: task.startDate)
+        print(dateString)
+        let time = view.viewWithTag(1000) as? UILabel
+        time?.text = dateString
+        formatter.dateFormat = "HH"
+        let dateString4:String = formatter.string(from: task.startDate)
+               print(dateString4)
+        timeCodeReset()
+        timeCode(hour: Int(dateString4)!)
     }
+    
+    func timeCode(hour:Int){
+    
+         let j = (hour+1)*100+2
+        let time = view.viewWithTag(j) as? UILabel
+                  time?.text = "○"
+        
+    }
+    func timeCodeReset(){
+        for i in 1..<26{
+            let  j = i*100+2
+            let time = view.viewWithTag(j) as? UILabel
+            time?.text = "ー"
+       }
+    }
+    @IBAction func toCalenBotton(_ sender: Any) {
+        
+    }
+    
     
 }

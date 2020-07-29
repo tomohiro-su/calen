@@ -22,9 +22,10 @@ class OneViewController: UIViewController {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     
     @IBOutlet weak var endDatePicker: UIDatePicker!
+    @IBOutlet weak var allImageView: UIImageView!
     
     @IBOutlet weak var tagTextField: UITextField!
-   
+    
     let realm = try! Realm()
     var task: Task!
     
@@ -36,59 +37,62 @@ class OneViewController: UIViewController {
     //MARK:最初に読まれる所
     override func viewDidLoad() {
         super.viewDidLoad()
-
-         //背景をタップしたらdismissKeyboardメソッドを呼ぶように設定する
-//            let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:selector(dismissKeyboard))
-//            self.view.addGestureRecognizer(tapGesture)
-
+        
+        
+        allImageView.image = UIImage(named:"inhand.png")
+        //背景をタップしたらdismissKeyboardメソッドを呼ぶように設定する
+        //            let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:selector(dismissKeyboard))
+        //            self.view.addGestureRecognizer(tapGesture)
+        
         //    add(tagCollection, toView: containerView)
         //    tagCollection.tags = ["Some", "Tag", "For", "You"]
     }
     
     //
     //override func viewWillDisappear(_ animated: Bool) {
-        
+    
     @IBAction func tapButton(_ sender: Any) {
-//     print(self.titleTextField.text!)
-//
-    
-    
-         self.task = Task()
+        //     print(self.titleTextField.text!)
+        //
+        
+        
+        self.task = Task()
         let allTasks = realm.objects(Task.self)
         if allTasks.count != 0 {
-           self.task.id = allTasks.max(ofProperty: "id")! + 1
+            self.task.id = allTasks.max(ofProperty: "id")! + 1
         }
         let realm = try! Realm()
-
-       // task = Task()
+        
+        // task = Task()
         //let indexPath = dayViewController.tableView.indexPathForSelectedRow
         //self.task = taskArray[0]
         
         //  setNotification(task: task)
-                let dt = Date()
-                print(self.contentsTextField.text!)
-               print(dt)
-               print(self.startDatePicker.date)
-               print(self.endDatePicker.date)
-               print(self.tagTextField.text!)
-                   //日時の変換
-
+        let dt = Date()
+        print(self.contentsTextField.text!)
+        print(dt)
+        print(self.startDatePicker.date)
+        print(self.endDatePicker.date)
+     //   print(self.tagTextField.text!)
+        //日時の変換
+        
         //        let dateFormatter = DateFormatter()
         //        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
         
         //MARK:realmに書き込む
         try! realm.write {
-       //     self.task.id = task.id
+            //     self.task.id = task.id
             print("self.task : \(self.task)")
-                print("self.titleTextField : \(self.titleTextField)")
+            print("self.titleTextField : \(self.titleTextField)")
             
             
-                    self.task.title = self.titleTextField.text!
+            self.task.title = self.titleTextField.text!
             self.task.contents = self.contentsTextField.text!
             self.task.date = dt
             self.task.startDate = self.startDatePicker.date
             self.task.endDate = self.endDatePicker.date
-            self.task.tag = self.tagTextField.text!
+            self.task.tag = String(task.id)
+            self.task.image = "inhand.png"
             self.realm.add(self.task, update: .modified)
             
             print(self.task.id)
@@ -98,7 +102,7 @@ class OneViewController: UIViewController {
             print(self.task.startDate)
             print(self.self.task.endDate)
             print(self.task.tag )
-
+            
             
         }
         
