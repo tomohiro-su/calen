@@ -34,9 +34,9 @@
         <!--カレンダー-->
         <scene sceneID="2h2-SG-hyg">
             <objects>
-                <viewController id="njj-LG-ch8" customClass="CarenViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cal" id="njj-LG-ch8" customClass="CarenViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LL1-0I-IB9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBp-pE-4hv" customClass="FSCalendar">
@@ -72,7 +72,7 @@
         <!--ハンド-->
         <scene sceneID="lnh-hb-b2W">
             <objects>
-                <viewController id="2Jk-x1-upx" customClass="OneViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="One" id="2Jk-x1-upx" customClass="OneViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s9n-hV-si7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,7 @@
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-WX-bIh">
                                 <rect key="frame" x="1" y="488" width="414" height="51"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <locale key="locale" localeIdentifier="ja"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="end" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfp-x1-7TW">
                                 <rect key="frame" x="166" y="547" width="77" height="21"/>
@@ -102,6 +103,7 @@
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uvv-8r-2vN">
                                 <rect key="frame" x="1" y="568" width="414" height="51"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <locale key="locale" localeIdentifier="ja"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie7-y2-jGC">
                                 <rect key="frame" x="166" y="468" width="77" height="21"/>
@@ -151,7 +153,7 @@
                             <constraint firstItem="bnT-bF-cq0" firstAttribute="centerX" secondItem="cRq-cH-pdo" secondAttribute="centerX" id="c9T-9c-rdi"/>
                             <constraint firstItem="md9-wP-ADV" firstAttribute="centerX" secondItem="cRq-cH-pdo" secondAttribute="centerX" id="eIf-fS-oCX"/>
                             <constraint firstItem="cRq-cH-pdo" firstAttribute="leading" secondItem="twU-p7-uJX" secondAttribute="leading" constant="10" id="f74-9D-PIQ"/>
-                            <constraint firstItem="md9-wP-ADV" firstAttribute="top" secondItem="xtp-bo-gY8" secondAttribute="bottom" constant="10" id="iH4-ED-8w0"/>
+                            <constraint firstItem="md9-wP-ADV" firstAttribute="top" secondItem="xtp-bo-gY8" secondAttribute="bottom" constant="100" id="iH4-ED-8w0"/>
                             <constraint firstItem="ZWO-Yf-Px1" firstAttribute="top" secondItem="bnT-bF-cq0" secondAttribute="bottom" constant="10" id="mg2-vd-INo"/>
                             <constraint firstItem="bnT-bF-cq0" firstAttribute="top" secondItem="cRq-cH-pdo" secondAttribute="bottom" constant="10" id="pHp-SE-Bzt"/>
                         </constraints>
@@ -175,7 +177,7 @@
         <!--マイク-->
         <scene sceneID="inT-rA-yQM">
             <objects>
-                <viewController id="SbN-Yf-YHm" customClass="MicViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Mic" id="SbN-Yf-YHm" customClass="MicViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SU1-k3-SQb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,7 +190,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHw-q5-Jf8">
-                                <rect key="frame" x="87" y="732" width="250" height="47"/>
+                                <rect key="frame" x="82" y="641" width="250" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -210,7 +212,7 @@
         <!--カメラ-->
         <scene sceneID="dID-By-Cyk">
             <objects>
-                <viewController id="IrL-ad-XhV" customClass="CameraViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cam" id="IrL-ad-XhV" customClass="CameraViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NLd-wH-uPb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,6 +231,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="カメラ" image="camera" catalog="system" id="TvU-zF-G2J"/>
                     <navigationItem key="navigationItem" id="PJl-Fb-kbp"/>
+                    <connections>
+                        <segue destination="6lP-l4-r6q" kind="show" identifier="camSegue" id="6fm-Bq-DOI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kh-wq-jsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,7 +242,7 @@
         <!--Day View Controller-->
         <scene sceneID="Ify-bX-grS">
             <objects>
-                <viewController id="6lP-l4-r6q" customClass="dayViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Day" id="6lP-l4-r6q" customClass="dayViewController" customModule="Calen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2pn-c4-OWK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1203,7 +1208,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SiL-bb-8b6"/>
+        <segue reference="ZGT-Oy-73F"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>

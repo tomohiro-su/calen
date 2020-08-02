@@ -24,14 +24,12 @@ PODS:
   - Realm/Headers (3.20.0)
   - RealmSwift (3.20.0):
     - Realm (= 3.20.0)
-  - TaggerKit (0.6.1)
 
 DEPENDENCIES:
   - CalculateCalendarLogic
   - CLImageEditor/AllTools (= 0.2.4)
   - FSCalendar
   - RealmSwift (= 3.20.0)
-  - TaggerKit
 
 SPEC REPOS:
   trunk:
@@ -40,7 +38,6 @@ SPEC REPOS:
     - FSCalendar
     - Realm
     - RealmSwift
-    - TaggerKit
 
 SPEC CHECKSUMS:
   CalculateCalendarLogic: cd5b2c706a8628bb924c5ee9d05c4f61bdbaf390
@@ -48,8 +45,7 @@ SPEC CHECKSUMS:
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
   RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
-  TaggerKit: e88422048a006b409a37b37f24785dfcca69b5b2
 
-PODFILE CHECKSUM: 7693459ece4baf8dd8bf9933e9a9f50b342170a2
+PODFILE CHECKSUM: f9482a73dac724ee7f97b1091962039c6c5c5942
 
 COCOAPODS: 1.9.3

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C0761625EA3AB374E8A6A66 /* Pods_Calen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261F92EB65687DA4D7E33E87 /* Pods_Calen.framework */; };
 		2C0B612224A56A150005AF60 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612124A56A150005AF60 /* OneViewController.swift */; };
 		2C0B612424A578A00005AF60 /* dayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612324A578A00005AF60 /* dayViewController.swift */; };
 		2C0B612624A57ED30005AF60 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B612524A57ED30005AF60 /* dataViewController.swift */; };
@@ -27,10 +26,11 @@
 		2C76779524C982D5001DFEE6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76779324C982D5001DFEE6 /* PostTableViewCell.swift */; };
 		2C76779624C982D5001DFEE6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C76779424C982D5001DFEE6 /* PostTableViewCell.xib */; };
 		2CFA179D24C1CED4000E306F /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA179C24C1CED4000E306F /* testView.xib */; };
+		8DBA89A1FE083B032EAE619B /* Pods_Calen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD6742755E1573CCEA5ACE9 /* Pods_Calen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		261F92EB65687DA4D7E33E87 /* Pods_Calen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2645751455222C4C78D72167 /* Pods-Calen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calen.release.xcconfig"; path = "Target Support Files/Pods-Calen/Pods-Calen.release.xcconfig"; sourceTree = "<group>"; };
 		2C0B612124A56A150005AF60 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		2C0B612324A578A00005AF60 /* dayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayViewController.swift; sourceTree = "<group>"; };
 		2C0B612524A57ED30005AF60 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +52,8 @@
 		2C76779324C982D5001DFEE6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		2C76779424C982D5001DFEE6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		2CFA179C24C1CED4000E306F /* testView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
-		7F87B58F18F223D9D02AC859 /* Pods-Calen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calen.release.xcconfig"; path = "Target Support Files/Pods-Calen/Pods-Calen.release.xcconfig"; sourceTree = "<group>"; };
-		D36A6F67342B26542349881C /* Pods-Calen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calen.debug.xcconfig"; path = "Target Support Files/Pods-Calen/Pods-Calen.debug.xcconfig"; sourceTree = "<group>"; };
+		461F725C2CA55AA974B6848B /* Pods-Calen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calen.debug.xcconfig"; path = "Target Support Files/Pods-Calen/Pods-Calen.debug.xcconfig"; sourceTree = "<group>"; };
+		FAD6742755E1573CCEA5ACE9 /* Pods_Calen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0761625EA3AB374E8A6A66 /* Pods_Calen.framework in Frameworks */,
+				8DBA89A1FE083B032EAE619B /* Pods_Calen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 				2C6A5987249D83FE00B206C7 /* Calen */,
 				2C6A5986249D83FE00B206C7 /* Products */,
 				4F361AC0E3C87782AD2232F7 /* Pods */,
-				B4F7E26D33A4B0785FAF2BA1 /* Frameworks */,
+				9454270E9DB96E21B34574C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,16 +116,16 @@
 		4F361AC0E3C87782AD2232F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D36A6F67342B26542349881C /* Pods-Calen.debug.xcconfig */,
-				7F87B58F18F223D9D02AC859 /* Pods-Calen.release.xcconfig */,
+				461F725C2CA55AA974B6848B /* Pods-Calen.debug.xcconfig */,
+				2645751455222C4C78D72167 /* Pods-Calen.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B4F7E26D33A4B0785FAF2BA1 /* Frameworks */ = {
+		9454270E9DB96E21B34574C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				261F92EB65687DA4D7E33E87 /* Pods_Calen.framework */,
+				FAD6742755E1573CCEA5ACE9 /* Pods_Calen.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,11 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C6A5999249D83FF00B206C7 /* Build configuration list for PBXNativeTarget "Calen" */;
 			buildPhases = (
-				7B0DFFC8DEB6184A0C6D15E5 /* [CP] Check Pods Manifest.lock */,
+				2DC82997F5A548F09F4FFACF /* [CP] Check Pods Manifest.lock */,
 				2C6A5981249D83FE00B206C7 /* Sources */,
 				2C6A5982249D83FE00B206C7 /* Frameworks */,
 				2C6A5983249D83FE00B206C7 /* Resources */,
-				8C311F656DD53273CC7108F9 /* [CP] Embed Pods Frameworks */,
+				CB369A60ED265B3B7D8AC32A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,7 +201,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B0DFFC8DEB6184A0C6D15E5 /* [CP] Check Pods Manifest.lock */ = {
+		2DC82997F5A548F09F4FFACF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,7 +223,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C311F656DD53273CC7108F9 /* [CP] Embed Pods Frameworks */ = {
+		CB369A60ED265B3B7D8AC32A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,37 +402,45 @@
 		};
 		2C6A599A249D83FF00B206C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D36A6F67342B26542349881C /* Pods-Calen.debug.xcconfig */;
+			baseConfigurationReference = 461F725C2CA55AA974B6848B /* Pods-Calen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 4F569WU965;
 				INFOPLIST_FILE = "$(SRCROOT)/Calen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.tomohiro.suda.Caren;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.tomohiro.suda.Calen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2C6A599B249D83FF00B206C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F87B58F18F223D9D02AC859 /* Pods-Calen.release.xcconfig */;
+			baseConfigurationReference = 2645751455222C4C78D72167 /* Pods-Calen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 4F569WU965;
 				INFOPLIST_FILE = "$(SRCROOT)/Calen/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.tomohiro.suda.Caren;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.tomohiro.suda.Calen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

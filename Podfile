@@ -11,9 +11,7 @@ target 'Calen' do
  # Pods for taskapp
   pod 'RealmSwift', '3.20.0'
 
-  # Pods for Calen
+  # Pods for Caren
 pod 'CLImageEditor/AllTools','0.2.4'
-
-pod 'TaggerKit'
 
 end

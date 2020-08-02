@@ -9,7 +9,6 @@
 import UIKit
 import RealmSwift
 import UserNotifications
-import TaggerKit
 
 class OneViewController: UIViewController {
     
@@ -39,10 +38,10 @@ class OneViewController: UIViewController {
         super.viewDidLoad()
         
         
-        allImageView.image = UIImage(named:"inhand.png")
+        _ = UIImage(named:"inhand.png")
         //背景をタップしたらdismissKeyboardメソッドを呼ぶように設定する
-        //            let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:selector(dismissKeyboard))
-        //            self.view.addGestureRecognizer(tapGesture)
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
         
         //    add(tagCollection, toView: containerView)
         //    tagCollection.tags = ["Some", "Tag", "For", "You"]
@@ -73,7 +72,7 @@ class OneViewController: UIViewController {
         print(dt)
         print(self.startDatePicker.date)
         print(self.endDatePicker.date)
-
+        
         
         //MARK:realmに書き込む
         try! realm.write {
@@ -109,6 +108,7 @@ class OneViewController: UIViewController {
         // キーボードを閉じる
         view.endEditing(true)
     }
+    
     func setNotification(task: Task) {
         let content = UNMutableNotificationContent()
         // タイトルと内容を設定(中身がない場合メッセージ無しで音だけの通知になるので「(xxなし)」を表示する)

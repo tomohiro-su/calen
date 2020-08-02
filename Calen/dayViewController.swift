@@ -21,7 +21,7 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     let realm = try! Realm()
     var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
     //let task : String = ""
-    
+   // let task.image = image!
     var task : Task!
     // データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -90,12 +90,18 @@ class dayViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     //MARK:segue で画面遷移する時に呼ばれる
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier != "toCalen"{
-            let oneViewController:OneViewController = segue.destination as! OneViewController
-            
-            if segue.identifier == "cellSegue" {
+             if segue.identifier == "camSegue"{
+               
+                let cameraViewController:CameraViewController = segue.destination as! CameraViewController
+                let indexPath = self.dayTableView.indexPathForSelectedRow
+                cameraViewController.task = taskArray[indexPath!.row]
+
+            } else if segue.identifier == "cellSegue" {
+                            let oneViewController:OneViewController = segue.destination as! OneViewController
                 let indexPath = self.dayTableView.indexPathForSelectedRow
                 oneViewController.task = taskArray[indexPath!.row]
             } else {
+                let oneViewController:OneViewController = segue.destination as! OneViewController
                 let task = Task()
                 
                 let allTasks = realm.objects(Task.self)
